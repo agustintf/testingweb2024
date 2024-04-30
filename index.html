@@ -1,16 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="utf-8" />
-        <title>Ejemplo</title>
-    </head>
-    <body>
-        <h1>Estos son los inicios del uso de las herramientas que vamos a usar</h1>
         
-        Pagina para mostrar git
-        modifico el archivo y
-        lo linkeo con la carpeta htdocs
-        para practicar html / css / js 
-    </body>
+    </head>
 
+<body>
+
+<h2>Ejemplo de javascript</h2>
+
+
+<p>Ingresar un numero entre 1 y 10 :</p>
+
+
+<input id="num">
+<button type="button" onclick="funcion1()">Enviar</button>
+
+
+<p id="demo"></p>
+
+
+<p id="numero"></p>
+
+
+<script>
+function funcion1() {
+  //Toma el valor del input con el id="num" y lo guarda en la variable x
+  let x = document.getElementById("num").value;
+  // chequea el valor ingesado
+  let text;
+  if (isNaN(x) || x < 1 || x > 10) // tengo tres condiciones con que una sea verdadera entra al if
+  {     // isNaN(x) pregunta si no es un nro
+    text = "Ingreso no valido";
+  }
+  else
+  {
+    text = "Ingreso valido";
+  }
+
+
+  x = x+1
+  document.getElementById("demo").innerHTML = text;
+  document.getElementById("numero").innerHTML = x;
+}
+</script>
+
+
+</body>
 </html>
