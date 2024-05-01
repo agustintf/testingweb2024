@@ -1,8 +1,6 @@
 //Esta funcion se ejecuta cuando incluya... 
 $(document).ready(function()
 {
-
-    //alert('Entró a la función');
     insertar_registro();
 })
 
@@ -42,6 +40,8 @@ function insertar_registro()
                     //    $('#Registration').modal('show');
                     //    $('form').trigger('reset');
                     //    Mostrar_registro();
+                        alert("Entró a la función");
+                        alert(data);
                     }
                 }
             )
